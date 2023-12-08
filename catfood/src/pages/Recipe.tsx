@@ -3,7 +3,11 @@ import "../components/recipeComponents/recipieStyle.scss"
 
 function Recipe() {
   return (
-    <main className='container'>Recipe</main>
+    <main className='container'>
+      <div className='ingredientContainer'></div>
+      <div className='instructionContainer'></div>
+
+    </main>
   )
 }
 
