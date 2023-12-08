@@ -1,0 +1,19 @@
+$backGround: red;
+
+#root {
+  font-family:Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+  background-color: #242424;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  max-width: 100vw;
+  min-height: 100vh;
+  justify-content: center;
+  
+}
+body {
+  padding: 0;
+  margin: 0;
+}
