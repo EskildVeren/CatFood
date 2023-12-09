@@ -1,19 +1,84 @@
-$backGround: red;
+$text: #f0e2fe;
+$backGround: #090013;
+$primary: #b377fd;
+$secondary: #ad4303;
+$accent: #f1fb25;
 
-#root {
+$darkText: #0f011e;
+$darkBackGround: #f4ebff;
+$darkPrimary: #3e0288;
+$darkSecondary: #fc924f;
+$darkAccent: #d1dc04;
+
+body {
   font-family:Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color-scheme: light dark;
-  background-color: #242424;
-  margin: 0;
-  display: flex;
-  place-items: center;
+  background-color: $backGround;  
   max-width: 100vw;
   min-height: 100vh;
+  display: flex;
   justify-content: center;
-  
-}
-body {
   padding: 0;
   margin: 0;
+  color: $text;
+  #root {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-height: 100vh;
+  }
+}
+.navbar {
+  width: 100%;
+  height: 4em;
+  background-color: $secondary;
+  display: flex;
+  gap: 2px;
+  a {
+    display: flex;
+    flex-grow: 1;
+    background-color: $backGround;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  a:hover {
+    cursor: pointer;
+  }
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $secondary;
+  gap: 2px;
+  h1 {
+    text-align: center;
+  }
+  .recipeSection {
+    background-color: $backGround;
+  }
+  .recipeIntro{
+    font-style: italic;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-align: justify;
+  }
+  .infoContainer {
+    background-color: $backGround;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    padding-top: 20px;
+    justify-content: space-between;
+    li {
+      list-style-type: none;
+      font-weight: bold;
+    }
+    img {
+      max-width: 40%;
+    }
+  }
 }
