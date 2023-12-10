@@ -26,7 +26,6 @@ $darkAccent: #d1dc04;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    gap: 3em;
 }
 .recipeCard {
     width: 25%;
@@ -39,8 +38,15 @@ $darkAccent: #d1dc04;
     font-weight: bold;
     letter-spacing: .05em;
     color: $text;
+    border-radius: 3%;
+    margin: 15px;
     img {
         width: 100%;
-        border-radius: 3%;
+        border-radius: 2%;
     }
   }
+.recipeCard:hover {
+    border: 3px solid $secondary;
+    margin: 12px;
+
+}

@@ -23,6 +23,7 @@ body {
   margin: 0;
   color: $text;
   letter-spacing: .025em;
+  border-color: $secondary;
   #root {
     display: flex;
     flex-direction: column;
