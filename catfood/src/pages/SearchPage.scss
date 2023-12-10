@@ -18,5 +18,29 @@ $darkAccent: #d1dc04;
     border: $accent;
     font-weight: bold;
     padding: .5em;
-    
 }
+.recipeCardHolder {
+    padding-top: 8em;
+    background-color: $backGround;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+}
+.recipeCard {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: $backGround;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: .05em;
+    color: $text;
+    img {
+        width: 100%;
+        border-radius: 3%;
+    }
+  }

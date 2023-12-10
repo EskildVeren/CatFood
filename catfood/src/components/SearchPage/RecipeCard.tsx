@@ -6,9 +6,7 @@ function RecipeCard(props: {imageLink: string, recipeName: string}) {
     <Link to="/">
         <img src={props.imageLink}></img>
         <h3>{props.recipeName}</h3>
-
-    
-    RecipeCard</Link>
+    </Link>
   )
 }
 
