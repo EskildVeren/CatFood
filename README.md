@@ -1,3 +1,15 @@
+## Hvordan kjøre prosjektet
+### Oppsett
+Klon repoet:   
+`git clone https://github.com/EskildVeren/CatFood.git`
+
+Installer avhengigheter første gang du prøver det ut    
+`npm install`   
+
+### Om oppsettet allerede er gjort
+Kjør webapplikasjonen i utviklermodus   
+`npm run dev`
+
 ## Om prosjektet
 Lage eget prosjekt, holde voersikt over retter jeg lager, utvikle web
 Gro mine matferdigheter, bruker vanligvis ikke oppskrifter,
