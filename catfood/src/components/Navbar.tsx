@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Navbar() {
   return (
     <div className='navbar'>
-      <a>Hjem</a>
-      <a>Oppskriftfinner</a>
-      <a>Om meg</a>
-      <a>Ta kontakt!</a>
+      <Link to='searchpage'>Hjem</Link>
+      <Link to='searchpage'>Oppskriftfinner</Link>
+      <Link to='searchpage'>Om meg</Link>
+      <Link to='searchpage'>Ta kontakt!</Link>
     </div>
   )
 }

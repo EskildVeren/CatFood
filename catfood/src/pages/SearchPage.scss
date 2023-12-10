@@ -1,0 +1,22 @@
+$text: #f0e2fe;
+$backGround: #090013;
+$primary: #b377fd;
+$secondary: #ad4303;
+$accent: #f1fb25;
+
+$darkText: #0f011e;
+$darkBackGround: #f4ebff;
+$darkPrimary: #3e0288;
+$darkSecondary: #fc924f;
+$darkAccent: #d1dc04;
+
+
+.searchBar {
+    font-size: 1.5em;
+    background-color: $text;
+    color: $backGround;
+    border: $accent;
+    font-weight: bold;
+    padding: .5em;
+    
+}
