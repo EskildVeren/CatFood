@@ -9,10 +9,8 @@ function InstructionSet() {
         støpejern, karbonstål eller rustfritt stål. Da får du lett perfekt varme, både overnfra og nedenfra. Dette er også en metode der det er lettere å jobbe med 
         våte pizzadeiger. Prøv den ut da!
       </p>
-
+      
       <img src='https://www.killingthyme.net/wp-content/uploads/2022/08/cast-iron-pizza-01.jpg' height="400px" alt='oida, bildet er borte!'></img>
-
-    
     </div>
   )
 }

@@ -12,7 +12,6 @@ function Recipe() {
           våte pizzadeiger. Prøv den ut da!
         </p>
         </div>
-
       <div className='infoContainer recipeSection'>
         <ul>
           <h2>Ingredienser</h2>
@@ -47,10 +46,6 @@ function Recipe() {
           Legg nå stekepanna i midten av ovnen og vent i 2-3 minutter til osten lukter deilig og er brun. La nå pizaen hvile, og Bon apetit!
         </p>
       </div>
-      
-
-
-    
     </main>
   )
 }
