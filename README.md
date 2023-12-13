@@ -3,7 +3,10 @@
 Klon repoet:   
 `git clone https://github.com/EskildVeren/CatFood.git`
 
-Installer avhengigheter første gang du prøver det ut    
+Gå inn i prosjektmappa
+`cd catfood/`
+
+Installer avhengigheter første gang du prøver det ut  
 `npm install`   
 
 ### Om oppsettet allerede er gjort
