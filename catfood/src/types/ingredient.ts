@@ -1,5 +1,6 @@
-type ingredient = {
+export type ingredient = {
     id: number;
-    amount: number;
-    food: string;
+    mengde: number;
+    enhet: string
+    produkt: string;
 }

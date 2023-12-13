@@ -2,9 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import RecipePage from './pages/RecipePage.tsx'
 import './index.scss'
-import Recipe from './components/recipeComponents/Recipe.tsx';
 import SearchPage from './pages/SearchPage.tsx';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import WriteRecipePage from './pages/WriteRecipePage.tsx';
 
 const router = createBrowserRouter([
   {
@@ -14,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: "/recipe",
     element: <RecipePage />,
+  },
+  {
+    path: "/writerecipe",
+    element: <WriteRecipePage />,
   },
 ]);
 

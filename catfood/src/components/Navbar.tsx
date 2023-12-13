@@ -7,7 +7,8 @@ function Navbar() {
       <Link to='/'>Hjem</Link>
       <Link to='/'>Oppskriftfinner</Link>
       <Link to='/'>Om meg</Link>
-      <Link to='/'>Ta kontakt!</Link>
+      <Link to='/'>Ta kontakt</Link>
+      <Link to='/writerecipe'>Lag en oppskrift!</Link>
     </div>
   )
 }

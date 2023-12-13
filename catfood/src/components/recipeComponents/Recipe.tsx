@@ -1,4 +1,49 @@
+import { ingredient } from "../../types/ingredient"
 import IngredientList from "./IngredientList"
+
+const ingredients: ingredient[] = [
+  {
+    id: 0,
+    mengde: 400,
+    enhet: "g",
+    produkt: "mel"},
+  {
+    id: 1,
+    mengde: 1,
+    enhet: "pakke",
+    produkt: "tørrgjær"},
+  {
+    id: 2,
+    mengde: 100,
+    enhet: "g",
+    produkt: "mozzarella"},
+  {
+    id: 3,
+    mengde: 200,
+    enhet: "ml",
+    produkt: "lunkent vann"},
+  {
+    id: 4,
+    mengde: 1,
+    enhet: "teskje",
+    produkt: "salt"},
+  {
+    id:5,
+    mengde: 1,
+    enhet: "teskje",
+    produkt: "hvitløkspulver"},
+  {
+    id: 6,
+    mengde: 1,
+    enhet: "hel",
+    produkt: "chili"},
+  {
+    id: 7,
+    mengde: 8,
+    enhet: "",
+    produkt: "pepperoni"},
+]
+
 
 function Recipe() {
   return (
@@ -15,11 +60,9 @@ function Recipe() {
       <div className='infoContainer recipeSection'>
         <ul>
           <h2>Ingredienser</h2>
-          <li>400g mel</li>
-          <li>200ml vann</li>
-          <li>1pk gjær</li>
-          <li>100g ost</li>
-          <li>400g hakkede tomater</li>
+          {ingredients.map( (ingredient)=>(
+            <li>{ingredient.mengde + " "+ ingredient.produkt}</li>
+          ))}
         </ul>
         <img src='https://www.killingthyme.net/wp-content/uploads/2022/08/cast-iron-pizza-01.jpg' alt='oida, bildet er borte!'></img>
       </div>

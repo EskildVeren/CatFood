@@ -1,4 +1,6 @@
-type recipe = {
+import { ingredient } from "./ingredient";
+
+export type recipe = {
     id: number;
     navn: string;
     tittel: string;
