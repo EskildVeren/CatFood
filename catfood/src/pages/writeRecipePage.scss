@@ -35,13 +35,32 @@ input, textarea {
 }
 input {
     height: 2em;
-
 }
+
 .errorMessage {
     color: tomato;
 }
+
 .submitButton {
     width: 10em;
     text-align: center;
     align-self: center;
+}
+
+.ingredientInput {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+    svg:hover {
+        cursor: pointer;
+    }
+    .amountInput {
+        width: 3em;
+    }
+    .unitInput {
+        width: 5em;
+    }
+    .foodInput {
+        width: 10%;
+    }
 }

@@ -1,4 +1,5 @@
 import { useForm, SubmitHandler } from "react-hook-form"
+import IngredientInput from "./IngredientInput"
 
 type Inputs = {
   tittel: string
@@ -25,7 +26,7 @@ function RecipeForm() {
       {/* register your input into the hook by invoking the "register" function */}
       <label>
         Tittel
-        <input defaultValue="test" {...register("tittel")} className="titleInput"/>
+        <input {...register("tittel")} className="titleInput"/>
       </label>
 
       <label>
@@ -43,8 +44,10 @@ function RecipeForm() {
 
       <label>
         Ingredienser
-        <input {...register("ingredienser", { required: true })} />
+        <input {...register("ingredienser.0", { required: true })} />
       </label>
+
+      <IngredientInput/>
 
       <label>
         Oppskriftsteg
@@ -55,7 +58,6 @@ function RecipeForm() {
         Lagre oppskrift!
         <input type="submit"/>
       </label>
-      
     </form>
   )
 }
