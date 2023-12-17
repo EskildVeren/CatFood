@@ -18,7 +18,7 @@ function RecipeForm() {
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (data) => console.log(data)
 
-  console.log(watch("tittel")) // watch input value by passing the name of it
+  console.log(watch("oppskriftSteg")) // watch input value by passing the name of it
 
   return (
     /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
@@ -47,7 +47,7 @@ function RecipeForm() {
         <input {...register("ingredienser.0", { required: true })} />
       </label>
 
-      <IngredientInput/>
+      <IngredientInput register={register}/>
 
       <label>
         Oppskriftsteg

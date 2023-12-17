@@ -1,12 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { PlusSquare, XSquare  } from 'lucide-react';
 
+function IngredientInput(props: {register: any}) {
 
-function IngredientInput() {
+  const [ingredientInputs, setIngredientInput] = useState([0])
+
+  function addIngredient() {
+    setIngredientInput(oldInputs => [...ingredientInputs, ingredientInputs.length])
+  }
+
   return (
     <label>
         IngredientInput
-        <IngredientListItem/>
+        {ingredientInputs.map(()=> (
+          <IngredientListItem/>
+        ))}
+        <PlusSquare color="#54e357" onClick={() => addIngredient()}/>
     </label>
   )
 }
@@ -17,7 +26,6 @@ function IngredientListItem() {
         <input className='amountInput'/>
         <input className='unitInput'/> {/* Make into hamburger meny for safety */}
         <input className='foodInput'/>
-        <PlusSquare color="#54e357"/>
         <XSquare color='#EF4040'/>
       </label>
     )
