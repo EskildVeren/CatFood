@@ -1,15 +1,14 @@
-import Navbar from '../components/Navbar'
-import RecipeForm from '../components/writeRecipe/RecipeForm'
-import "./writeRecipePage.scss"
+import Navbar from "../components/Navbar";
+import RecipeForm from "../components/writeRecipe/RecipeForm";
+import "./writeRecipePage.scss";
 
 function WriteRecipePage() {
   return (
     <>
-      <Navbar/>
-      <RecipeForm/>
+      <Navbar />
+      <RecipeForm />
     </>
-
-  )
+  );
 }
 
-export default WriteRecipePage
+export default WriteRecipePage;
