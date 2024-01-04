@@ -5,6 +5,7 @@ import "./index.scss";
 import SearchPage from "./pages/SearchPage.tsx";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import WriteRecipePage from "./pages/WriteRecipePage.tsx";
+import AboutMePage from "./pages/AboutMePage.tsx";
 
 const router = createBrowserRouter([
   {
@@ -16,8 +17,12 @@ const router = createBrowserRouter([
     element: <RecipePage />,
   },
   {
-    path: "/writerecipe",
+    path: "/writeRecipe",
     element: <WriteRecipePage />,
+  },
+  {
+    path: "/aboutMe",
+    element: <AboutMePage />,
   },
 ]);
 

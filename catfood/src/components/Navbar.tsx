@@ -6,9 +6,9 @@ function Navbar() {
     <div className="navbar">
       <Link to="/">Hjem</Link>
       <Link to="/">Oppskriftfinner</Link>
-      <Link to="/">Om meg</Link>
+      <Link to="/aboutMe">Om meg</Link>
       <Link to="/">Ta kontakt</Link>
-      <Link to="/writerecipe">Lag en oppskrift!</Link>
+      <Link to="/writeRecipe">Lag en oppskrift!</Link>
     </div>
   );
 }

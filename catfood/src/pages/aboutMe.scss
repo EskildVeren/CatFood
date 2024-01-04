@@ -1,0 +1,31 @@
+$text: #f0e2fe;
+$backGround: #090013;
+$primary: #b377fd;
+$secondary: #ad4303;
+$accent: #f1fb25;
+
+$darkText: #0f011e;
+$darkBackGround: #f4ebff;
+$darkPrimary: #3e0288;
+$darkSecondary: #fc924f;
+$darkAccent: #d1dc04;
+
+.introText {
+    line-height: 1.8;
+    overflow-wrap: normal;
+    word-break: normal;
+    text-align: justify;
+}
+.experienceSection {
+    background-color: $backGround;
+    padding-left: 15%;
+    padding-right: 15%;
+    .upper {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    .lower {
+        color: darken($text, 2%)
+    }
+}

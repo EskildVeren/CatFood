@@ -1,5 +1,4 @@
 import { ingredient } from "../../types/ingredient";
-import IngredientList from "./IngredientList";
 
 const ingredients: ingredient[] = [
   {
@@ -55,7 +54,7 @@ const ingredients: ingredient[] = [
 function Recipe() {
   return (
     <main className="container">
-      <div className="recipeSection">
+      <div className="pageSection">
         <h1>Pannepizza er bedre for kokkeri i hjemmet!</h1>
         <p className="recipeIntro">
           Pizza er en klassiker som nytes av mange. Likevel er det vanlig å
@@ -68,7 +67,7 @@ function Recipe() {
           pizzadeiger. Prøv den ut da!
         </p>
       </div>
-      <div className="infoContainer recipeSection">
+      <div className="infoContainer pageSection">
         <ul>
           <h2>Ingredienser</h2>
           {ingredients.map((ingredient) => (
@@ -80,7 +79,7 @@ function Recipe() {
           alt="oida, bildet er borte!"
         ></img>
       </div>
-      <div className="recipeSection">
+      <div className="pageSection">
         <h3>Vi starter med å lage pizzadeigen</h3>
         <p className="instructionStep">
           Bland gjær og lunkent vann i en stor bolle. Tilsett så sukker, salt og
